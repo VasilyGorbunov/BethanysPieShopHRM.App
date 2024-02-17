@@ -5,14 +5,15 @@
         </div>
         <div class="card-body employee-card text-center">
             <div class="mb-3">
-                <img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{Employee.EmployeeId}.jpg")"
-                     class="employee-img rounded-circle" />
+                @* <img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{Employee.EmployeeId}.jpg")"
+                     class="employee-img rounded-circle" /> *@
+                <img src="@Employee.ImageName" class="employee-img rounded-circle img-fluid" />
             </div>
             <button class="btn btn-primary btn-sm mb-1" @onclick="@(async () => await EmployeeQuickViewClicked.InvokeAsync(Employee))">Quick View</button>
 
             <button class="btn btn-primary btn-sm mb-1" @onclick="(() => NavigateToDetails(Employee))">Full Details</button>
 
-            @* <a href="@($"employeedetail/{Employee.EmployeeId}")" class="btn btn-outline-primary">Full Details</a> *@
+            <a href="@($"employeeedit/{Employee.EmployeeId}")" class="btn btn-outline-primary">Edit Employee</a>
         </div>
     </div>
 </div>

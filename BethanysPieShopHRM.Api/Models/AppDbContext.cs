@@ -43,7 +43,7 @@ namespace BethanysPieShopHRM.Api.Models
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
                 EmployeeId = 1,
-                CountryId = 1,
+                CountryId = 4,
                 MaritalStatus = MaritalStatus.Single,
                 BirthDate = new DateTime(1979, 1, 16),
                 City = "Brussels",

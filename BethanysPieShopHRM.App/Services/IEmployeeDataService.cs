@@ -8,6 +8,6 @@ public interface IEmployeeDataService
     Task<IEnumerable<Employee>> GetAllEmployees(bool refreshRequired = false);
     Task<Employee> GetEmployeeDetails(int employeeId);
     Task<Employee> AddEmployee(Employee employee);
-    Task<Employee> UpdateEmployee(Employee employee);
+    Task UpdateEmployee(Employee employee);
     Task<Employee> DeleteEmployee(int employeeId);
 }
