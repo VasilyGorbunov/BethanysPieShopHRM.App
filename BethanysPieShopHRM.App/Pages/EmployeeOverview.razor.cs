@@ -1,8 +1,6 @@
-﻿using BethanysPieShopHRM.App.Models;
-using BethanysPieShopHRM.App.Services;
+﻿using BethanysPieShopHRM.App.Services;
 using BethanysPieShopHRM.Shared.Domain;
 using Microsoft.AspNetCore.Components;
-using System.Net.Http.Json;
 
 namespace BethanysPieShopHRM.App.Pages
 {
